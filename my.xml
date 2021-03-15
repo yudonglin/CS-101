@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Yudong Lin, 3/1/2021 -->
+<!--If XML prolog exists, it must come first in the document.-->
+<Journal>
+    <journal_entry id="1">
+        <!-- The <body> tag need to be closed with </body> instead of another <body> --> 
+        <body>Today is my first journal entry! I'm working on my XML skills.</body>
+        <date_posted>Friday, June 15th, 2012</date_posted>
+    </journal_entry>
+    <!-- It is better to use 2 instead of b; then, it is easier to read the data later. -->
+    <journal_entry id='2'>
+        <body>Enough XML,today I'm going to the beach!
+            <pic>beachtime.jpg</pic>
+        </body>
+        <!-- Missing a > for tag </date_posted>, and I change "june" to "June" to follow the format. --> 
+        <date_posted>Saturday, June 16th, 2012</date_posted>
+    </journal_entry>
+    <!-- You can use either ' or ", not both at the same time. --> 
+    <journal_entry id='3'>
+        <body>Back to the XML grind...</body>
+        <!-- I add the year to follow the format of date_posted --> 
+        <date_posted>Monday, June 18th, 2012</date_posted>
+    </journal_entry>
+    <!-- don't forget to take this comment out when I'm done! -->
+<!-- Since XML is case-sensitive, it is necessary to close the <Journal> with </Journal> insetad of </journal>-->
+</Journal>

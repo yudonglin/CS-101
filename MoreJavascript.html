@@ -1,0 +1,37 @@
+<!-- Yudong Lin, 3/1/2021 -->
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function computegrade(score) {
+                if (isNaN(score) == false){
+                    if (score >= 90){
+                        return "Grade is A";
+                    } else if (score >= 80){
+                        return "Grade is B";
+                    } else if (score >= 70){
+                        return "Grade is C";
+                    } else if (score >= 60){
+                        return "Grade is D";
+                    } else {
+                        return "Grade is F";
+                    }
+                } else {
+                    return "Bad score";
+                }
+                
+            };
+            function clickButtonEvent(){
+                var score = document.getElementById("score").value;
+                alert(computegrade(score));
+            }
+            
+        </script>
+    </head>
+    <body>
+        <p>Enter score in the box:</p>
+        <input type="text" id="score">
+        <button onclick="clickButtonEvent()">Click</button>
+    </body>
+</html>
